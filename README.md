@@ -28,14 +28,22 @@ API Spec in json : http://localhost:8094/api-spec
 API Spec in yaml : http://localhost:8094/api-spec.yaml (will download the spec file).
 
 # Build and run :
+
 cd MigrationToolDemo/
+
 mvn clean package
+
 mvn spring-boot:run
+
 Or
+
 cd /target
-java -jar migrationTool-1.0.0-SNAPSHOT.war
+
+java -jar migrationTool-0.0.1-SNAPSHOT.war
+
 
 # Testing Action :
+
 App runs at pre-configured port : 8094
 
 End-points : There are 2 endpoints exposed in this tool:
@@ -43,14 +51,19 @@ End-points : There are 2 endpoints exposed in this tool:
 POST
 
 /api/migration/rules
+
 sample response:
+
 201 created 
+
 This will create  mapping rules.
 
 GET
 
 /api/migration/rules/{ruleId}
+
 sample response:
+
 {
     "ruleId": "6",
     "match": {
@@ -71,9 +84,11 @@ sample response:
 }
 
 Create mapping rules.
+
 curl --header "Content-Type: application/json" --request POST http://localhost:8094/api/migration/rules -d  @rules.json
 
 Dispaly configured rule 
+
 curl --header "Content-Type: application/json" --request GET http://localhost:8094/api/migration/rules/{ruleId}
 
 
