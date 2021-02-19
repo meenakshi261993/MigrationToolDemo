@@ -1,0 +1,6 @@
+---
+network_service_type: "B"
+device_id: "uuid23"
+configuration:
+  configB1: "value23_1"
+  configB2: "value23_2"

@@ -1,0 +1,6 @@
+---
+network_service_type: "C"
+dev: "uuid22"
+conf:
+  configC1: "value22_1"
+  configC2: "value22_3"

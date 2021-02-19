@@ -1,0 +1,112 @@
+{
+  "rules": [
+    {
+      "ruleId": "1",
+      "match": {
+        "model": "KeyValue",
+        "paramExists": [
+          "param1"
+        ],
+        "paramAbsent": "param2"
+      },
+      "network": {
+        "network_service_type": "A",
+        "device": "uuid",
+        "parameters": {
+          "paramA1": "param1",
+          "paramA2": ""
+        }
+      }
+    },
+    {
+      "ruleId": "2",
+      "match": {
+        "model": "KeyValue",
+        "paramExists": [
+          "param1",
+          "param2"
+        ]
+      },
+      "network": {
+        "network_service_type": "B",
+        "device_id": "uuid",
+        "configuration": {
+          "configB1": "param1",
+          "configB2": "param2"
+        }
+      }
+    },
+    {
+      "ruleId": "3",
+      "match": {
+        "model": "KeyValue",
+        "paramExists": [
+          "param1",
+          "param3"
+        ],
+        "paramAbsent": "param2"
+      },
+      "network": {
+        "network_service_type": "C",
+        "dev": "uuid",
+        "conf": {
+          "configC1": "param1",
+          "configC2": "param3"
+        }
+      }
+    },
+    {
+      "ruleId": "4",
+      "match": {
+        "model": "JsonValue",
+        "paramExists": [
+          "param1",
+          "param2"
+        ]
+      },
+      "network": {
+        "network_service_type": "B",
+        "device_id": "deviceId",
+        "configuration": {
+          "configB1": "param1",
+          "configB2": "param2"
+        }
+      }
+    },
+    {
+      "ruleId": "5",
+      "match": {
+        "model": "JsonValue",
+        "paramExists": [
+          "param1"
+        ]
+      },
+      "network": {
+        "network_service_type": "A",
+        "device": "deviceId",
+        "parameters": {
+          "paramA1": "param1"
+        }
+      }
+    },
+    {
+      "ruleId": "6",
+      "match": {
+        "model": "JsonValue",
+        "paramExists": [
+          "param2"
+        ],
+        "paramAbsent": "param1"
+
+      },
+      "network": {
+        "network_service_type": "B",
+        "device_id": "deviceId",
+        "configuration": {
+          "configB1": "",
+          "configB2": "param2"
+        }
+      }
+    }
+  ]
+}

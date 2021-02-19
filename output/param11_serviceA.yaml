@@ -1,0 +1,5 @@
+---
+network_service_type: "A"
+device: "id11"
+parameters:
+  paramA1: "value11_1"
