@@ -125,8 +125,8 @@ public class DeviceToNetworkMapping {
     /**
      *Updates the model details based on the input
      *
-     * @param inputModel
-     * @param field
+     * @param inputModel input model map
+     * @param field  map entry fields to be updated with input data
      */
     private void parseObjectNodeInNetworkJsonNode(Map<String, String> inputModel, Map.Entry<String, JsonNode> field) {
         JsonNode paramsNode = field.getValue();
@@ -142,9 +142,9 @@ public class DeviceToNetworkMapping {
     /**
      *Updates the fields based on input
      *
-     * @param inputModel
-     * @param network
-     * @param field
+     * @param inputModel input model map
+     * @param network  matched network objectNode
+     * @param field field to be updated with input data
      */
     private void updateNetworkBasedOnInput(Map<String, String> inputModel, ObjectNode network, Map.Entry<String, JsonNode> field) {
         String modelName = inputModel.get(field.getValue().textValue());
@@ -154,8 +154,8 @@ public class DeviceToNetworkMapping {
     /**
      *Checks the input model against the paramExists
      *
-     * @param inputModel
-     * @param paramExists
+     * @param inputModel  input model map
+     * @param paramExists  list paramExists from match object of rule
      * @return boolean value
      */
     private boolean checkParamExistsInInput(Map<String, String> inputModel, List<String> paramExists) {

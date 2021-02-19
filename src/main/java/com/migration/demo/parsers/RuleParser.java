@@ -21,8 +21,8 @@ public class RuleParser {
     /**
      * Parse the rules received from the user based on defined template
      *
-     * @param json
-     * @return
+     * @param json mapping rules in json format
+     * @return List<MappingRules> list of mapping rules
      */
     public List<MappingRules> parseJson(String json) {
 

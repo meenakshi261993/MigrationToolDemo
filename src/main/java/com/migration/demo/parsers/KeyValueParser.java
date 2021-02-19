@@ -24,7 +24,7 @@ public class KeyValueParser {
     /**
      *Parse the input text file content to map into the hashmap
      *
-     * @param text
+     * @param text input txt model content
      * @throws IOException
      */
     public void parseInputText(String text) throws IOException {

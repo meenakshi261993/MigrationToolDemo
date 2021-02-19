@@ -12,6 +12,7 @@
     <groupId>com.migration</groupId>
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>migrationTool</name>
     <description>Migration tool Demo project</description>
 

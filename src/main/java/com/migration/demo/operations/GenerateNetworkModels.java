@@ -36,7 +36,7 @@ public class GenerateNetworkModels {
     /**
      * Process the files from the input directory
      * @param file path of  input files
-     * @return
+     * @return string containing the mapped network details
      * @throws IOException
      */
     public String generateNetwork(String file) throws IOException {

@@ -37,8 +37,8 @@ public class WriteNetworkServiceFiles {
     /**
      * Maps the received network details from string to JsonNode
      *
-     * @param content
-     * @param fileName
+     * @param content string content to be written into file
+     * @param fileName string input filename
      * @throws IOException
      */
     private void createNetworkServiceFiles(String content,String fileName) throws IOException {
@@ -55,7 +55,7 @@ public class WriteNetworkServiceFiles {
     /**
      *It writes the network JsonNode to output yaml file
      *
-     * @param fileName input filename
+     * @param fileName  string input filename
      * @param networkJsonNode updtated network JsonNode
      * @throws IOException
      */

@@ -24,7 +24,7 @@ public class JsonModelParser {
     /**
      * Parse the input JSON file content to map into the hashmap
      *
-     * @param json
+     * @param json input json model file content
      */
    public void  parseInputJson(String json){
 
